@@ -14,10 +14,14 @@
       font-weight: 400;
       font-style: normal;
       font-size: x-large;
+      margin-left: 25pt;
+      margin-right: 25pt;
     }
-    nav ul li { list-style-type: none; }
+    ul li { list-style-type: none; }
     #about-container { display: flex; }
-    #bio { margin-left: 50pt; }
+    #project-showcase { display: flex; }
+    #bio { margin-right: 25pt; }
+    .project { display: flex; }
   </style>
   <body>
     <nav><ul>
@@ -39,10 +43,10 @@
       <div id="bio">
         <h2>About Me</h2>
         <p>
-          I’ve spent the last two years on multidisciplinary teams of 9-13 
+          I’m Leif Larson. I’ve spent the last two years on multidisciplinary teams of 9-13 
           developers bringing digital experiences to life. My background is in 
-          quality assurance, software architecture design, programming leadership, 
-          and interactive experience programming. 
+          quality assurance, software architecture design, programming 
+          leadership, and interactive experience programming. 
           <br><br>
           I am currently enrolled at UW-Stout working towards a B.S. Computer 
           Science degree.
@@ -52,9 +56,10 @@
         <img src="self-portrait.png"
           alt="
             A simple, line art self-portrait of Leif Larson. He has a content 
-            smile, short beard, and long locks of hair which flow out of frame. 
-            He is wearing a button up coat with a pocket on each breast, and a mug
-            of hot tea is included in frame, floating in space.
+            smile, short beard, and long locks of hair which flow out of 
+            frame. He is wearing a button up coat with a pocket on each 
+            breast, and a mug of hot tea is included in frame, floating in 
+            space.
           "
           title="Self-Portrait"
           height="300px"
@@ -62,5 +67,30 @@
         <caption>self portrait</caption>
       </div> <!-- end of picture-box -->
     </div> <!-- end of about-container -->
+    <br>
+    <h2>Digital Games Showcase</h2>
+    <p>I've worked on a number of digital games. The ones I'm most proud of are highlighted below.</p>
+    <ul id="project-showcase">
+      <li class="project">
+        <a href="https://freyrus1.itch.io/into-orbit">
+          <img                src='into-orbit-sleep.png'
+            onmouseout ="this.src='into-orbit-sleep.png';"
+            onmouseover="this.src='into-orbit-wake.png';" 
+            alt="
+              A stylized drawing of an alien with long, floppy antennae. The 
+              alien's expression brightens and they turn to face the viewer 
+              when hovered over.
+            "
+          />
+        </a>
+        <p>
+          As QA Lead on <u>Into Orbit</u>, I worked on centralized feature and 
+          bug tracking, consistent rounds of testing, minor tool development 
+          to speed up testing and development teamwide, as well as gameplay 
+          feature implementation.
+        </p>
+      </li> <!-- end of project: Into Orbit -->      
+    </ul>
+    </div></div>
   </body>
 </html>
